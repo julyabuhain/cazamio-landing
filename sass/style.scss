@@ -10,7 +10,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-#mast .btn-info {
+ .btn-info {
   background-color: #ffad32;
   text-transform: uppercase;
   border-top-right-radius: 100px;
@@ -19,9 +19,18 @@
   font-size: 15px;
 }
 
+.logo-row img {
+  width: 350px;
+}
+
+.mast-title {
+  font-size: 1.2em;
+}
 .email-form{
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   width: 300px;
@@ -30,4 +39,22 @@
 
 .hero-img {
   height: 600px;
+}
+
+#house {
+  background-color: #eeebff;
+  height: 700px;
+}
+
+.img-thumb-card {
+  width: 120px;
+  padding: 30px;
+}
+
+.card-body {
+  height: 180px;
+}
+
+#why-caza {
+  text-align: center;
 }
