@@ -63,9 +63,12 @@ body{
 }
 
 #cazamio-about{
-  background: #fff;
-  padding: 8% 0;
+  background-image: url("../img/cazamio-about-bg.jpg");
+  padding: 8% 0 14% 0;
   position: relative;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   .about-content{
     position: relative;
     z-index: 100;
@@ -107,9 +110,9 @@ body{
 #cazamio-list{
   padding: 10% 0;
   background: #343434; /* Old browsers */
-  background: -moz-linear-gradient(top, #343434 0%, #616161 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #343434 0%,#616161 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #343434 0%,#616161 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top, #3e3e3e 0%, #616161 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #3e3e3e 0%,#616161 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #3e3e3e 0%,#616161 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343434', endColorstr='#616161',GradientType=0 ); /* IE6-9 */
   .putme-onlist{
     margin: 40px auto;
@@ -277,7 +280,9 @@ footer{
   }
 }
 
-
+.separator-wave{
+  width: 100%;
+}
 .spacer {
   height: 100px;
 }
@@ -289,8 +294,18 @@ footer{
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; 
 }
+#cazamio-video{
+  width: 100%;
+  height: 620px;
+}
 
 @media screen and (max-width: 991px) {
+  #cazamio-video {
+    height: 420px;
+  }
+  #cazamio-about{
+    background-size: cover;
+  }
   #why-cazamio{
     .card{
       height: auto;
@@ -325,6 +340,9 @@ footer{
 }
 
 @media screen and (max-width: 767px) {
+  #cazamio-about{
+    background-size: contain;
+  }
   #mast{
     .priority-access{
       border-radius: 0;
@@ -370,3 +388,10 @@ footer{
   }   
   
 }
+
+@media screen and (max-width: 420px) {
+  #cazamio-video {
+    height: 320px;
+  }
+}
+
