@@ -1,68 +1,372 @@
 @import "structure";
 @import "variables";
 
-#mast {
-  background: #242038; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #242038, #181625); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #242038, #181625); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 100vh;
-  color: white;
+body{
   font-family: 'Poppins', sans-serif;
 }
-
- .btn-info {
-  background-color: #ffad32;
-  text-transform: uppercase;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border: 0;
-  font-size: 15px;
+#mast {
+  padding: 0 0 8% 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  background: $color_gray; 
+  .mast-intro{
+    padding: 10% 0 0 0;
+    h2{
+      font-size: 35px;
+      font-weight: 400;
+      line-height: normal;
+    }
+    & p{
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  & .priority-access{
+    margin: 40px 0;
+    font-size: 20px;
+    -webkit-box-shadow: -38px 26px 67px 8px rgba(0,0,0,0.51);
+    -moz-box-shadow: -38px 26px 67px 8px rgba(0,0,0,0.51);
+    box-shadow: -38px 26px 67px 8px rgba(0,0,0,0.51);
+    border-radius: 100px;
+    background: $color_transparent;
+    .input-group{
+      background: $color_transparent;
+      input[type="email"]{
+        padding: 25px 20px;
+        border-radius: 0;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        width: 55%;
+        border: 0;
+      }
+      & button[type="submit"]{
+        border-radius: 0;
+        padding: 25px 20px;
+        background-color: #edd574;
+        text-transform: uppercase;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        width: 45%;
+        border: 0;
+        font-weight: 600;
+        color: #000000;
+      }
+    }
+  }
+  & .hero-img {
+    text-align: right;
+    img{
+      height: auto;
+      max-height: 500px;
+    }
+  }
 }
 
-.logo-row img {
-  width: 350px;
+#cazamio-about{
+  background: #fff;
+  padding: 8% 0;
+  position: relative;
+  .about-content{
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    color: $color_gray;
+    p{
+      font-size: 27px;
+      font-weight: normal;
+    }
+    & h2{
+      font-size: 40px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  & .img-bgs{
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    width: 100%;
+    left: 0;
+    .sun-and-cloud{
+      width: 1360px;
+      max-width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    & .tree-and-house{
+      width: 1360px;
+      max-width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
-.mast-title {
-  font-size: 1.2em;
-}
-.email-form{
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
-  width: 300px;
-  border: 0;
+#cazamio-list{
+  padding: 10% 0;
+  background: #343434; /* Old browsers */
+  background: -moz-linear-gradient(top, #343434 0%, #616161 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #343434 0%,#616161 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #343434 0%,#616161 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343434', endColorstr='#616161',GradientType=0 ); /* IE6-9 */
+  .putme-onlist{
+    margin: 40px auto;
+    font-size: 20px;
+    -webkit-box-shadow: -38px 26px 67px 8px rgba(0,0,0,0.51);
+    -moz-box-shadow: -38px 26px 67px 8px rgba(0,0,0,0.51);
+    box-shadow: -38px 26px 67px 8px rgba(0,0,0,0.51);
+    border-radius: 100px;
+    width: 700px;
+    max-width: 100%;
+    background: $color_transparent;
+    .input-group{
+      background: $color_transparent;
+      input[type="email"]{
+        padding: 25px 20px;
+        border-radius: 0;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        width: 55%;
+        border: 0;
+      }
+      & button[type="submit"]{
+        border-radius: 0;
+        padding: 25px 20px;
+        background-color: #edd574;
+        text-transform: uppercase;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        width: 45%;
+        border: 0;
+        font-weight: 600;
+        color: #000000;
+      }
+    }
+  }
+  & h2 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    line-height: normal;
+  }
 }
 
-.hero-img {
-  height: 600px;
+#why-cazamio{
+  padding-top: 5%;
+  h2{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+  } 
+  & .card{
+    -webkit-box-shadow: 0px 0px 36px -7px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 36px -7px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 36px -7px rgba(0,0,0,0.35);
+    border-radius: 0;
+    border: none;
+    margin-bottom: 40px;
+    color: $color_gray;
+    height: $card_height;
+    padding: 10% 0;
+    .card-title{
+      font-size: 25px;
+      font-weight: 500
+    }
+    & .img-thumb-card {
+      padding: 15px;
+    }
+    & .card-text{
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  
 }
 
-#house {
-  background-color: #eeebff;
-  height: 700px;
+#get-started{
+  padding: 5% 0;
+  color: $color_gray;
+  h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .steps-content{
+    position: relative;
+    top: 23%;
+    bottom: auto;
+    h3{
+      font-size: 40px;
+      font-weight: 400;
+      line-height: normal;
+    }
+    & span.steps{
+      display: block;
+      font-weight: bold;
+      font-size: 26px;
+      text-transform: uppercase;
+    }
+    & p{
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
 }
 
-.img-thumb-card {
-  width: 120px;
-  padding: 30px;
+footer{
+  background: #575757; /* Old browsers */
+  background: -moz-linear-gradient(top, #575757 0%, #333333 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #575757 0%,#333333 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #575757 0%,#333333 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#575757', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+  .signme-up{
+    margin: 40px auto;
+    font-size: 20px;
+    -webkit-box-shadow: -38px 26px 67px 8px rgba(0,0,0,0.51);
+    -moz-box-shadow: -38px 26px 67px 8px rgba(0,0,0,0.51);
+    box-shadow: -38px 26px 67px 8px rgba(0,0,0,0.51);
+    border-radius: 100px;
+    width: 700px;
+    max-width: 100%;
+    background: $color_transparent;
+    .input-group{
+      background: $color_transparent;
+      input[type="email"]{
+        padding: 25px 20px;
+        border-radius: 0;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        width: 55%;
+        border: 0;
+      }
+      & button[type="submit"]{
+        border-radius: 0;
+        padding: 25px 20px;
+        background-color: #edd574;
+        text-transform: uppercase;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        width: 45%;
+        border: 0;
+        font-weight: 600;
+        color: #000000;
+      }
+    }
+  }
+  & .copyright{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+  }
+  & .footer-intro{
+    color: #fff;
+    h2{
+      font-size: 40px;
+      font-weight: 400;
+      line-height: normal;
+    }
+    & p{
+      font-size: 27px;
+      font-weight: normal;
+    }
+    & span.yellow-t{
+      color: #edd574
+    }
+  }
 }
 
-.card-body {
-  height: 180px;
-}
-
-#why-caza {
-  text-align: center;
-}
 
 .spacer {
   height: 100px;
 }
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+}
 
-.step-img {
-  height: 300px;
+@media screen and (max-width: 991px) {
+  #why-cazamio{
+    .card{
+      height: auto;
+      padding: 5% 0;
+    }
+    & .img-thumb-card {
+      padding: 30px;
+    }
+  }
+  #mast {
+    text-align: center;
+   .hero-img {
+      text-align: center;
+    }
+    .mast-intro{
+      padding: 4% 0 0 0;
+      h2{
+        font-size: 32px;
+      }
+    }
+  }
+
+  #get-started{
+    .steps-content{
+      position: static;
+      h3{
+        font-size: 36px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  #mast{
+    .priority-access{
+      border-radius: 0;
+      .input-group{
+        display: block;
+        button[type="submit"],
+        input[type="email"]{
+          width: 100%;
+          border-radius: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+  #cazamio-list{
+    .putme-onlist{
+      border-radius: 0;
+      .input-group{
+        display: block;
+        button[type="submit"],
+        input[type="email"]{
+          width: 100%;
+          border-radius: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+      
+  footer{
+    .signme-up{
+      border-radius: 0;
+      .input-group{
+        display: block;
+        input[type="email"],
+        button[type="submit"]{
+          width: 100%;
+          border-radius: 0;
+          text-align: center;
+        }
+      }
+    }
+  }   
+  
 }
