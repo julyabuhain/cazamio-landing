@@ -340,6 +340,12 @@ footer{
 }
 
 @media screen and (max-width: 767px) {
+  #why-cazamio {
+    .card{
+      text-align: center;
+    }
+  }
+
   #cazamio-about{
     background-size: contain;
   }
